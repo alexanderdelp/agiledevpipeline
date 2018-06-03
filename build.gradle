@@ -11,6 +11,7 @@ apply plugin: 'java-library'
 apply plugin: 'jacoco'
 apply plugin: 'pmd'
 
+// Compile using UTF-8 Encoding
 compileJava.options.encoding = 'UTF-8'
 compileTestJava.options.encoding = 'UTF-8'
 
