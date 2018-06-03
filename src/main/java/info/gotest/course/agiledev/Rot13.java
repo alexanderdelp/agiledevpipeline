@@ -8,7 +8,7 @@ public class Rot13
 
     private String convertToNonUmlautUpperCase( String message )
     {
-        return message.toUpperCase().replaceAll( "Ä", "AE" ).replaceAll( "Ö", "OE" ).replaceAll( "Ü", "UE" );
+        return message.toUpperCase().replaceAll( "Ã„", "AE" ).replaceAll( "Ã–", "OE" ).replaceAll( "Ãœ", "UE" );
     }
 
     private char encrypt( char character )

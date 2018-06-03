@@ -19,12 +19,12 @@ class Rot13Test
     // "@" -> "@"
     // "_" -> "_"
     // "{" -> "{"
-    // "Ä" -> "NR"
-    // "ä" -> "NR"
-    // "Ö" -> "BR"
-    // "Ü" -> "HR"
-    // "ß" -> "FF"
-    // "ICH saß da!" -> "VPU FNFF QN!"
+    // "Ã„" -> "NR"
+    // "Ã¤" -> "NR"
+    // "Ã–" -> "BR"
+    // "Ãœ" -> "HR"
+    // "ÃŸ" -> "FF"
+    // "ICH saÃŸ da!" -> "VPU FNFF QN!"
 
     Rot13 rot13;
 
@@ -88,38 +88,38 @@ class Rot13Test
     }
 
     @Test
-    void Ä_shouldEncryptToNR()
+    void Ã„_shouldEncryptToNR()
     {
-        assertEncryptionOfMessageEquals( "NR", "Ä" );
+        assertEncryptionOfMessageEquals( "NR", "Ã„" );
     }
 
     @Test
-    void ä_shouldEncryptToNR()
+    void Ã¤_shouldEncryptToNR()
     {
-        assertEncryptionOfMessageEquals( "NR", "ä" );
+        assertEncryptionOfMessageEquals( "NR", "Ã¤" );
     }
 
     @Test
-    void Ö_shouldEncryptToBR()
+    void Ã–_shouldEncryptToBR()
     {
-        assertEncryptionOfMessageEquals( "BR", "Ö" );
+        assertEncryptionOfMessageEquals( "BR", "Ã–" );
     }
 
     @Test
-    void Ü_shouldEncryptToHR()
+    void Ãœ_shouldEncryptToHR()
     {
-        assertEncryptionOfMessageEquals( "HR", "Ü" );
+        assertEncryptionOfMessageEquals( "HR", "Ãœ" );
     }
 
     @Test
-    void ß_shouldEncryptToFF()
+    void ÃŸ_shouldEncryptToFF()
     {
-        assertEncryptionOfMessageEquals( "FF", "ß" );
+        assertEncryptionOfMessageEquals( "FF", "ÃŸ" );
     }
 
     @Test
     void verificationMessage_shouldEncryptToCorrectCipher()
     {
-        assertEncryptionOfMessageEquals( "VPU FNFF QN!", "ICH saß da!" );
+        assertEncryptionOfMessageEquals( "VPU FNFF QN!", "ICH saÃŸ da!" );
     }
 }
