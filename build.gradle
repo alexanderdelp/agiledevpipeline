@@ -3,6 +3,7 @@ plugins {
     id 'java'
     id 'jacoco'
     id 'pmd'
+    id 'org.sonarqube' version '2.6'
 }
 
 // Compile using UTF-8 Encoding
