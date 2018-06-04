@@ -33,4 +33,10 @@ public class FizzBuzzA
         }
         return numbers;
     }
+    
+    public static Object returnNewObject(int i)
+    {
+        int j = 1 + 1;
+        return new Object();
+    }
 }
