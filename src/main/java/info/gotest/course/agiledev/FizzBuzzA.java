@@ -2,6 +2,10 @@ package info.gotest.course.agiledev;
 
 public class FizzBuzzA
 {
+    private FizzBuzzA()
+    {
+    }
+    
     public static Object[] GetNumbers()
     {
         Object[] numbers = new Object[100];
